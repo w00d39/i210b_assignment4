@@ -1,0 +1,1179 @@
+{
+  "requesterUsername": "w00d39",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/179752122",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Welcome, **@w00d39**, I'm your Copilot and I'm here to help you get things done faster. You can also [start an inline chat session](command:workbench.action.quickchat.launchInlineChat).",
+    "I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and [share feedback](https://aka.ms/microsoft/vscode-copilot-release) so that we can learn and improve. Check out the [Copilot documentation](https://code.visualstudio.com/docs/copilot/getting-started-chat) to learn more."
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 121
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 122
+            },
+            "text": "Using base python, NO LIBRARIES OR IMPORTS, Write a function where it prints pokemon names based on their type1 or type2.",
+            "kind": "text"
+          }
+        ],
+        "text": "Using base python, NO LIBRARIES OR IMPORTS, Write a function where it prints pokemon names based on their type1 or type2."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Sure, here's a step-by-step plan and the corresponding code:\n\n### Plan\n1. Define a function `print_pokemon_by_type`.\n2. Create a list of dictionaries where each dictionary represents a Pokémon with its name, type1, and type2.\n3. Iterate through the list and check if the Pokémon's type1 or type2 matches the given type.\n4. Print the Pokémon's name if it matches the given type.\n\n### Code\n```python\ndef print_pokemon_by_type(pokemon_list, type_to_search):\n    for pokemon in pokemon_list:\n        if pokemon['type1'] == type_to_search or pokemon['type2'] == type_to_search:\n            print(pokemon['name'])\n\n# Example usage\npokemon_list = [\n    {'name': 'Bulbasaur', 'type1': 'Grass', 'type2': 'Poison'},\n    {'name': 'Charmander', 'type1': 'Fire', 'type2': None},\n    {'name': 'Squirtle', 'type1': 'Water', 'type2': None},\n    {'name': 'Pidgey', 'type1': 'Normal', 'type2': 'Flying'},\n    {'name': 'Pikachu', 'type1': 'Electric', 'type2': None},\n]\n\nprint_pokemon_by_type(pokemon_list, 'Fire')\n```\n\nThis function will print the names of Pokémon that have 'Fire' as either their type1 or type2.",
+          "isTrusted": {
+            "enabledCommands": [
+              "_github.copilot.openRelativePath",
+              "_github.copilot.openSymbolInFile",
+              "_github.copilot.openSymbolFromReferences"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 774,
+          "totalElapsed": 4181
+        },
+        "metadata": {
+          "modelMessageId": "f61cf696-34b2-441b-bc57-313c326e5cdd",
+          "responseId": "b0593ae5-c319-4c53-9e47-6aec57081c1a",
+          "sessionId": "fd22c136-b804-4b9a-8bb7-0a03267c5fbe",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "How can I modify the function to search for Pokémon based on their type1 and type2 simultaneously?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot or type / for commands",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "supportsSlowVariables": true,
+          "requester": {
+            "name": "w00d39",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/179752122",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [],
+        "supportsToolReferences": true
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "external": "file:///Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "path": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 79
+            }
+          }
+        }
+      ],
+      "codeCitations": []
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 40
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 41
+            },
+            "text": "crawl the pokemon_data.csv for me please",
+            "kind": "text"
+          }
+        ],
+        "text": "crawl the pokemon_data.csv for me please"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Sure, here's a step-by-step plan and the corresponding code to read the [`pokemon_data.csv`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/pokemon_data.csv\") file and print Pokémon names based on their [`type1`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A0%2C%22character%22%3A23%7D%7D%5D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"Go to definition\") or [`type2`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A0%2C%22character%22%3A29%7D%7D%5D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"Go to definition\").\n\n### Plan\n1. Define a function `print_pokemon_by_type_from_csv`.\n2. Open the [`pokemon_data.csv`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/pokemon_data.csv\") file and read its contents.\n3. Parse the CSV data to extract Pokémon information.\n4. Iterate through the parsed data and check if the Pokémon's [`type1`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A0%2C%22character%22%3A23%7D%7D%5D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"Go to definition\") or [`type2`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A0%2C%22character%22%3A29%7D%7D%5D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"Go to definition\") matches the given type.\n5. Print the Pokémon's name if it matches the given type.\n\n### Code\n```python\ndef print_pokemon_by_type_from_csv(filename, type_to",
+          "isTrusted": {
+            "enabledCommands": [
+              "_github.copilot.openRelativePath",
+              "_github.copilot.openSymbolInFile",
+              "_github.copilot.openSymbolFromReferences"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "markdownVuln",
+          "content": {
+            "value": "_search",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "vulnerabilities": [
+            {
+              "title": "path-injection",
+              "description": "Unvalidated input in path value creation risks unintended file/directory access"
+            }
+          ]
+        },
+        {
+          "value": "):\n    with open(filename, 'r') as file:\n        # Skip the header line\n        file.readline()\n        \n        for line in file:\n            data = line.strip().split(',')\n            name = data[1]\n            type1 = data[3]\n            type2 = data[4]\n            \n            if type1 == type_to_search or type2 == type_to_search:\n                print(name)\n\n# Example usage\nprint_pokemon_by_type_from_csv('pokemon_data.csv', 'Fire')\n```\n\nThis function will read the [`pokemon_data.csv`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/pokemon_data.csv\") file and print the names of Pokémon that have 'Fire' as either their [`type1`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A0%2C%22character%22%3A23%7D%7D%5D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"Go to definition\") or [`type2`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fpokemon_data.csv%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A0%2C%22character%22%3A29%7D%7D%5D%2C%22b563ec69-6d17-47a4-baf0-8f90b0c3dd95%22%5D \"Go to definition\").",
+          "isTrusted": {
+            "enabledCommands": [
+              "_github.copilot.openRelativePath",
+              "_github.copilot.openSymbolInFile",
+              "_github.copilot.openSymbolFromReferences"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1103,
+          "totalElapsed": 4714
+        },
+        "metadata": {
+          "modelMessageId": "e4e4b21d-946c-4503-aebb-bc5209a92459",
+          "responseId": "b563ec69-6d17-47a4-baf0-8f90b0c3dd95",
+          "sessionId": "fd22c136-b804-4b9a-8bb7-0a03267c5fbe",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are the types of the Pokémon that have 'Water' as their type1 or type2?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot or type / for commands",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "supportsSlowVariables": true,
+          "requester": {
+            "name": "w00d39",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/179752122",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [],
+        "supportsToolReferences": true
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/pokemon_data.csv",
+              "external": "file:///Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/pokemon_data.csv",
+              "path": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/pokemon_data.csv",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 49,
+              "endColumn": 166
+            }
+          }
+        }
+      ],
+      "codeCitations": []
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 58
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 59
+            },
+            "text": "how do i only capitalize the first letter for a user input",
+            "kind": "text"
+          }
+        ],
+        "text": "how do i only capitalize the first letter for a user input"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "You can use the `capitalize()` method in Python to capitalize only the first letter of the user input. Here's how you can modify your code to achieve this:\n\n```python\n# Write a function where it prints pokemon names based on their type1 or type2.\n\nwith open(\"pokemon_data.csv\", \"r\") as file: # opening the file in read mode\n    contents = file.read() # reading the contents of the file\n    lines = contents.splitlines() # splitting the contents by lines\n    # splitting the lines by commas and saving them to a list of columns for my sanity\n    columns = [line.split(\",\") for line in lines] \n\n    header = columns[0] # grabs the column names\n\ntype1Index = header.index(\"type1\") # finds which index the type1 column is in\ntype2Index = header.index(\"type2\") # finds which index the type2 column is in\nnameIndex = header.index(\"name\") # finds which index the name column is in\n\nuser_input = input(\"Enter a type: \").capitalize() # asks the user to input a type and capitalizes the first letter\n\n# Function to print Pokemon names based on type1 or type2\ndef print_pokemon_by_type(columns, type1Index, type2Index, nameIndex, type_to_search):\n    for column in columns[1:]: # Skip the header row\n        if column[type1Index] == type_to_search or column[type2Index] == type_to_search:\n            print(column[nameIndex])\n\n# Call the function with the user input\nprint_pokemon_by_type(columns, type1Index, type2Index, nameIndex, user_input)\n```\n\nThis code will capitalize only the first letter of the user input, ensuring that the input matches the format of the types in your CSV file.",
+          "isTrusted": {
+            "enabledCommands": [
+              "_github.copilot.openRelativePath",
+              "_github.copilot.openSymbolInFile",
+              "_github.copilot.openSymbolFromReferences"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 939,
+          "totalElapsed": 4421
+        },
+        "metadata": {
+          "modelMessageId": "9f79dbe3-3798-4d6f-95fc-9618653ec03c",
+          "responseId": "31da19eb-e591-45df-b8b9-39b9ddb429b7",
+          "sessionId": "fd22c136-b804-4b9a-8bb7-0a03267c5fbe",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "How can I count the number of Pokémon that have a specific type in the `pokemon_data.csv` file?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot or type / for commands",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "supportsSlowVariables": true,
+          "requester": {
+            "name": "w00d39",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/179752122",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [],
+        "supportsToolReferences": true
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "external": "file:///Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "path": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 17,
+              "endColumn": 1
+            }
+          }
+        }
+      ],
+      "codeCitations": []
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 10
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 11
+            },
+            "agent": {
+              "extensionId": {
+                "value": "GitHub.copilot-chat",
+                "_lower": "github.copilot-chat"
+              },
+              "publisherDisplayName": "GitHub",
+              "extensionPublisherId": "GitHub",
+              "extensionDisplayName": "GitHub Copilot Chat",
+              "id": "github.copilot.workspace",
+              "description": "Ask about your workspace",
+              "metadata": {
+                "sampleRequest": "How do I build this project?",
+                "themeIcon": {
+                  "id": "code"
+                },
+                "hasFollowups": true,
+                "isSecondary": true,
+                "supportIssueReporting": false
+              },
+              "name": "workspace",
+              "fullName": "Workspace",
+              "locations": [
+                "panel"
+              ],
+              "slashCommands": [
+                {
+                  "name": "explain",
+                  "description": "Explain how the code in your active editor works"
+                },
+                {
+                  "name": "tests",
+                  "description": "Generate unit tests for the selected code"
+                },
+                {
+                  "name": "fix",
+                  "description": "Propose a fix for the problems in the selected code",
+                  "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+                },
+                {
+                  "name": "new",
+                  "description": "Scaffold code for a new file or project in a workspace",
+                  "sampleRequest": "Create a RESTful API server using typescript",
+                  "isSticky": true
+                },
+                {
+                  "name": "newNotebook",
+                  "description": "Create a new Jupyter Notebook",
+                  "sampleRequest": "How do I create a notebook to load data from a csv file?"
+                }
+              ],
+              "disambiguation": [],
+              "supportsToolReferences": true
+            },
+            "kind": "agent"
+          },
+          {
+            "range": {
+              "start": 10,
+              "endExclusive": 11
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 11,
+              "endLineNumber": 1,
+              "endColumn": 12
+            },
+            "text": " ",
+            "kind": "text"
+          },
+          {
+            "range": {
+              "start": 11,
+              "endExclusive": 15
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 12,
+              "endLineNumber": 1,
+              "endColumn": 16
+            },
+            "command": {
+              "name": "fix",
+              "description": "Propose a fix for the problems in the selected code",
+              "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+            },
+            "kind": "subcommand"
+          },
+          {
+            "range": {
+              "start": 15,
+              "endExclusive": 60
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 16,
+              "endLineNumber": 1,
+              "endColumn": 61
+            },
+            "text": " TypeError: 'int' object is not subscriptable",
+            "kind": "text"
+          }
+        ],
+        "text": "@workspace /fix TypeError: 'int' object is not subscriptable"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "The error occurs because the code is trying to subscript an integer. Specifically, the line [`if i[type1] == givenType or i[type2] == givenType:`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A23%2C%22character%22%3A12%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\") is incorrect. Here, [`i`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A23%2C%22character%22%3A12%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\") is an integer (index), not a list or dictionary.\n\nTo fix this, we need to iterate over the elements of the lists [`type1`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A14%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\"), [`type2`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A15%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\"), and [`name`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A16%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\") simultaneously. We can use the `zip` function to achieve this. Here's the corrected code:\n\n### Plan\n1. Open and read the file.\n2. Split the contents into lines and then into columns.\n3. Extract the indices for [`type1`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A14%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\"), [`type2`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A15%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\"), and [`name`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A16%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\").\n4. Create lists for [`type1`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A14%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\"), [`type2`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A15%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\"), and [`name`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A16%2C%22character%22%3A0%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\") excluding the header.\n5. Define a function [`pokemonType`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A21%2C%22character%22%3A4%7D%7D%5D%2C%2286ecbc9d-3feb-48ed-9662-4919d8934875%22%5D \"Go to definition\") to filter Pokémon names based on the given type.\n6. Print the result of the function.\n\n### Corrected Code\n```python\n# Write a function where it prints pokemon names based on their type1 or type2.\n\nwith open(\"pokemon_data.csv\", \"r\") as file:  # opening the file in read mode\n    contents = file.read()  # reading the contents of the file\n    lines = contents.splitlines()  # splitting the contents by lines\n    # splitting the lines by commas and saving them to a list of columns for my sanity\n    columns = [line.split(\",\") for line in lines]\n\n    header = columns[0]  # grabs the column names\n\ntype1Index = header.index(\"type1\")  # finds which index the type1 column is in\ntype2Index = header.index(\"type2\")  # finds which index the type2 column is in\nnameIndex = header.index(\"name\")  # finds which index the name column is in\n\ntype1 = [row[type1Index] for row in columns[1:]]  # creates the list of type1 by using the type1Index but excludes the header\ntype2 = [row[type2Index] for row in columns[1:]]  # creates the list of type2 by using the type2Index but excludes the header\nname = [row[nameIndex] for row in columns[1:]]  # creates the list of name by using the nameIndex but excludes the header\n\ngivenType = input(\"Enter a type: \").capitalize()  # asks the user to input a type and caps it to match\n\ndef pokemonType(givenType, type1, type2, name):\n    typeList = []\n    for t1, t2, n in zip(type1, type2, name):\n        if t1 == givenType or t2 == givenType:\n            typeList.append(n)\n    return typeList\n\nprint(pokemonType(givenType, type1, type2, name))\n```",
+          "isTrusted": {
+            "enabledCommands": [
+              "_github.copilot.openRelativePath",
+              "_github.copilot.openSymbolInFile",
+              "_github.copilot.openSymbolFromReferences"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 674,
+          "totalElapsed": 6191
+        },
+        "metadata": {
+          "modelMessageId": "f2e2ca6e-6bdb-48e8-a874-c694cc5db045",
+          "responseId": "86ecbc9d-3feb-48ed-9662-4919d8934875",
+          "sessionId": "83510f1d-ebba-4a21-b950-86b4123bfacd",
+          "agentId": "github.copilot.workspace",
+          "command": "fix"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.workspace",
+          "subCommand": "fix",
+          "message": "How can I fix a \"NameError: name 'pokemonType' is not defined\" error?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.workspace",
+        "description": "Ask about your workspace",
+        "metadata": {
+          "sampleRequest": "How do I build this project?",
+          "themeIcon": {
+            "id": "code"
+          },
+          "hasFollowups": true,
+          "isSecondary": true,
+          "supportIssueReporting": false
+        },
+        "name": "workspace",
+        "fullName": "Workspace",
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works"
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code"
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+          },
+          {
+            "name": "new",
+            "description": "Scaffold code for a new file or project in a workspace",
+            "sampleRequest": "Create a RESTful API server using typescript",
+            "isSticky": true
+          },
+          {
+            "name": "newNotebook",
+            "description": "Create a new Jupyter Notebook",
+            "sampleRequest": "How do I create a notebook to load data from a csv file?"
+          }
+        ],
+        "disambiguation": [],
+        "supportsToolReferences": true
+      },
+      "slashCommand": {
+        "name": "fix",
+        "description": "Propose a fix for the problems in the selected code",
+        "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "external": "file:///Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "path": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 29,
+              "endColumn": 50
+            }
+          }
+        }
+      ],
+      "codeCitations": []
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 40
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 41
+            },
+            "text": "what is a better way to format the print",
+            "kind": "text"
+          }
+        ],
+        "text": "what is a better way to format the print"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "To format the print output in a more readable way, you can join the list of Pokémon names into a single string with each name on a new line. Here's the updated code:\n\n```python\nwith open(\"pokemon_data.csv\", \"r\") as file:  # opening the file in read mode\n    contents = file.read()  # reading the contents of the file\n    lines = contents.splitlines()  # splitting the contents by lines\n    # splitting the lines by commas and saving them to a list of columns for my sanity\n    columns = [line.split(\",\") for line in lines]\n\n    header = columns[0]  # grabs the column names\n\ntype1Index = header.index(\"type1\")  # finds which index the type1 column is in\ntype2Index = header.index(\"type2\")  # finds which index the type2 column is in\nnameIndex = header.index(\"name\")  # finds which index the name column is in\n\ntype1 = [row[type1Index] for row in columns[1:]]  # creates the list of type1 by using the type1Index but excludes the header\ntype2 = [row[type2Index] for row in columns[1:]]  # creates the list of type2 by using the type2Index but excludes the header\nname = [row[nameIndex] for row in columns[1:]]  # creates the list of name by using the nameIndex but excludes the header\n\ngivenType = input(\"Enter a type: \").capitalize()  # asks the user to input a type and caps it to match\n\ndef pokemonType(givenType, type1, type2, name):\n    typeList = []\n    for i in range(len(name)):\n        if givenType == type1[i] or givenType == type2[i]:\n            typeList.append(name[i])\n    return typeList\n\n# Get the list of Pokémon names\npokemon_names = pokemonType(givenType, type1, type2, name)\n\n# Print the Pokémon names in a formatted way\nif pokemon_names:\n    print(f\"Pokémon of type {givenType}:\")\n    print(\"\\n\".join(pokemon_names))\nelse:\n    print(f\"No Pokémon found with type {givenType}.\")\n```\n\nThis code will print the Pokémon names in a more readable format, with each name on a new line. If no Pokémon are found with the given type, it will print a message indicating that.",
+          "isTrusted": {
+            "enabledCommands": [
+              "_github.copilot.openRelativePath",
+              "_github.copilot.openSymbolInFile",
+              "_github.copilot.openSymbolFromReferences"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1149,
+          "totalElapsed": 6334
+        },
+        "metadata": {
+          "modelMessageId": "d4f70cc3-7259-4911-b763-096215059318",
+          "responseId": "7cc0b3c8-51e5-4d05-a173-083a3376bfc6",
+          "sessionId": "fd22c136-b804-4b9a-8bb7-0a03267c5fbe",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "How can I count the number of Pokémon with a specific type in the dataset?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot or type / for commands",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "supportsSlowVariables": true,
+          "requester": {
+            "name": "w00d39",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/179752122",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [],
+        "supportsToolReferences": true
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "external": "file:///Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "path": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 2,
+              "startColumn": 1,
+              "endLineNumber": 29,
+              "endColumn": 50
+            }
+          }
+        }
+      ],
+      "codeCitations": []
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 71
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 72
+            },
+            "text": "print(f\"Pokémon of type {givenType}:\") what do the curly braces specify",
+            "kind": "text"
+          }
+        ],
+        "text": "print(f\"Pokémon of type {givenType}:\") what do the curly braces specify"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "The curly braces `{}` in the string [`print(f\"Pokémon of type {givenType}:\")`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A39%2C%22character%22%3A8%7D%7D%5D%2C%22bb15ba95-e7d8-4a81-ba9f-0ed3c9611b57%22%5D \"Go to definition\") are used for string interpolation in Python's f-strings (formatted string literals). They allow you to embed expressions inside string literals, which are evaluated at runtime and formatted using the `__format__` protocol.\n\nIn this specific case, `{givenType}` is a placeholder that will be replaced with the value of the variable [`givenType`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A39%2C%22character%22%3A33%7D%7D%5D%2C%22bb15ba95-e7d8-4a81-ba9f-0ed3c9611b57%22%5D \"Go to definition\") when the string is printed.\n\nHere's a simple example to illustrate:\n\n```python\ngivenType = \"Fire\"\nprint(f\"Pokémon of type {givenType}:\")\n```\n\nThis will output:\n\n```\nPokémon of type Fire:\n```\n\nThe f-string makes it easy to include variable values and expressions directly within a string, improving readability and reducing the need for concatenation or other formatting methods.",
+          "isTrusted": {
+            "enabledCommands": [
+              "_github.copilot.openRelativePath",
+              "_github.copilot.openSymbolInFile",
+              "_github.copilot.openSymbolFromReferences"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1063,
+          "totalElapsed": 2743
+        },
+        "metadata": {
+          "modelMessageId": "3b77b221-a29e-419d-b8fe-49dffadb54a5",
+          "responseId": "bb15ba95-e7d8-4a81-ba9f-0ed3c9611b57",
+          "sessionId": "fd22c136-b804-4b9a-8bb7-0a03267c5fbe",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "How can I filter Pokémon names based on multiple types?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot or type / for commands",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "supportsSlowVariables": true,
+          "requester": {
+            "name": "w00d39",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/179752122",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [],
+        "supportsToolReferences": true
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "external": "file:///Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "path": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 40,
+              "startColumn": 9,
+              "endLineNumber": 40,
+              "endColumn": 47
+            }
+          }
+        }
+      ],
+      "codeCitations": []
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 25
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 26
+            },
+            "text": "print(\"\\n\".join(pokemon))",
+            "kind": "text"
+          }
+        ],
+        "text": "print(\"\\n\".join(pokemon))"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "The line [`print(\"\\n\".join(pokemon))`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Faliteralgodofpianosarahwood%2FProjects%2Fi210b%2Fassignment4%2Fassignment4.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A41%2C%22character%22%3A8%7D%7D%5D%2C%22d1a75e2b-0131-417d-ac93-1aedad8923a9%22%5D \"Go to definition\") takes a list of Pokémon names and joins them into a single string, with each name separated by a newline character (`\\n`). This effectively prints each Pokémon name on a new line.\n\nHere's an example to illustrate:\n\n```python\npokemon = [\"Bulbasaur\", \"Charmander\", \"Squirtle\"]\n\n# This will print:\n# Bulbasaur\n# Charmander\n# Squirtle\nprint(\"\\n\".join(pokemon))\n```\n\nIf you want to integrate this into the previous code for better formatting, you can do it like this:\n\n```python\nwith open(\"pokemon_data.csv\", \"r\") as file:  # opening the file in read mode\n    contents = file.read()  # reading the contents of the file\n    lines = contents.splitlines()  # splitting the contents by lines\n    # splitting the lines by commas and saving them to a list of columns for my sanity\n    columns = [line.split(\",\") for line in lines]\n\n    header = columns[0]  # grabs the column names\n\ntype1Index = header.index(\"type1\")  # finds which index the type1 column is in\ntype2Index = header.index(\"type2\")  # finds which index the type2 column is in\nnameIndex = header.index(\"name\")  # finds which index the name column is in\n\ntype1 = [row[type1Index] for row in columns[1:]]  # creates the list of type1 by using the type1Index but excludes the header\ntype2 = [row[type2Index] for row in columns[1:]]  # creates the list of type2 by using the type2Index but excludes the header\nname = [row[nameIndex] for row in columns[1:]]  # creates the list of name by using the nameIndex but excludes the header\n\ngivenType = input(\"Enter a type: \").capitalize()  # asks the user to input a type and caps it to match\n\ndef pokemonType(givenType, type1, type2, name):\n    typeList = []\n    for i in range(len(name)):\n        if givenType == type1[i] or givenType == type2[i]:\n            typeList.append(name[i])\n    return typeList\n\n# Get the list of Pokémon names\npokemon_names = pokemonType(givenType, type1, type2, name)\n\n# Print the Pokémon names in a formatted way\nif pokemon_names:\n    print(f\"Pokémon of type {givenType}:\")\n    print(\"\\n\".join(pokemon_names))\nelse:\n    print(f\"No Pokémon found with type {givenType}.\")\n```\n\nThis will print each Pokémon name on a new line, making the output more readable.",
+          "isTrusted": {
+            "enabledCommands": [
+              "_github.copilot.openRelativePath",
+              "_github.copilot.openSymbolInFile",
+              "_github.copilot.openSymbolFromReferences"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1225,
+          "totalElapsed": 8321
+        },
+        "metadata": {
+          "modelMessageId": "cecc47c8-09c9-4af2-8799-6352c9ecce67",
+          "responseId": "d1a75e2b-0131-417d-ac93-1aedad8923a9",
+          "sessionId": "fd22c136-b804-4b9a-8bb7-0a03267c5fbe",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "How can I filter the Pokémon names based on multiple types?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot or type / for commands",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "supportsSlowVariables": true,
+          "requester": {
+            "name": "w00d39",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/179752122",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [],
+        "supportsToolReferences": true
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "external": "file:///Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "path": "/Users/aliteralgodofpianosarahwood/Projects/i210b/assignment4/assignment4.py",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 42,
+              "startColumn": 9,
+              "endLineNumber": 42,
+              "endColumn": 34
+            }
+          }
+        }
+      ],
+      "codeCitations": []
+    }
+  ]
+}
